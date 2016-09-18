@@ -109,13 +109,9 @@ public class AraryList {
 
 		ArrayList<Boolean> resultado = new ArrayList<Boolean>();
 
-		for (int i = 0; i < num.size(); i++) {
-			if (num.get(i) == nume.get(i)) {
-				resultado.add(true);
-			} else {
-				resultado.add(false);
-			}
-		}
+		for (int i = 0; i < num.size(); i++) 
+			resultado.add(num.get(i) == nume.get(i));
+			
 
 		return resultado;
 	}
